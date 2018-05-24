@@ -1,16 +1,6 @@
-const produto = {
-    nome: "Caneta",
-    preco: 1.90,
-    desconto: 1
-};
+import 'react';
 
-function clone(obj){
-    return {... obj}; // "..." é um operador 'Spread' ele clona o obj. Tbm não é reconhecido pelo Browser, e tbm nao pelo babel
-                      // Por isso usamos um plugin do babel 'transform-object-rest-spread'
-}
+export default props => <h1>Olá React</h1>;
 
-const novoProduto = clone(produto);
 
-novoProduto.nome = 'Caneta Bic Azul';
-
-console.log(produto, novoProduto);
+console.log('Funcionou');
